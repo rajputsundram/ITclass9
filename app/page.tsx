@@ -1,65 +1,103 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Stats from "@/components/Stats";
+import Footer from "@/components/Footer";
+import ChapterCard from "@/components/ChapterCard";
+
+import { chapters } from "@/data/chapters";
 
 export default function Home() {
+  const unit1 = chapters.filter((chapter) => chapter.unit === "Unit 1");
+  const unit2 = chapters.filter((chapter) => chapter.unit === "Unit 2");
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-slate-50">
+      <Navbar />
+
+      <Hero />
+
+      <Stats />
+
+      {/* Chapters Section */}
+      <section className="relative py-24">
+        {/* Background Decorations */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute left-10 top-10 h-72 w-72 rounded-full bg-blue-100 opacity-40 blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 h-72 w-72 rounded-full bg-purple-100 opacity-40 blur-3xl"></div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Main Heading */}
+          <div className="mb-20 text-center">
+            <span className="inline-block rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700">
+              📘 Class 9 • Information Technology (402)
+            </span>
+
+            <h2 className="mt-6 text-4xl font-extrabold text-slate-800 md:text-5xl">
+              Chapter-wise Notes
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-500">
+              Learn every chapter with simple notes and downloadable PDFs.
+            </p>
+
+            <div className="mt-8 inline-flex items-center rounded-full bg-white px-6 py-3 shadow-md">
+              <span className="text-lg font-semibold text-slate-700">
+                📚 {chapters.length} Chapters
+              </span>
+            </div>
+          </div>
+
+          {/* ================= UNIT 1 ================= */}
+          <div className="mb-20">
+            <div className="mb-10 text-center">
+              <span className="rounded-full bg-indigo-100 px-5 py-2 text-sm font-bold text-indigo-700">
+                UNIT 1
+              </span>
+
+              <h3 className="mt-4 text-3xl font-bold text-slate-800">
+                Employability Skills
+              </h3>
+
+              <p className="mt-2 text-slate-500">
+                Develop communication, self-management, ICT, entrepreneurship,
+                and green skills.
+              </p>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+              {unit1.map((chapter) => (
+                <ChapterCard key={chapter.id} chapter={chapter} />
+              ))}
+            </div>
+          </div>
+
+          {/* ================= UNIT 2 ================= */}
+          <div>
+            <div className="mb-10 text-center">
+              <span className="rounded-full bg-emerald-100 px-5 py-2 text-sm font-bold text-emerald-700">
+                UNIT 2
+              </span>
+
+              <h3 className="mt-4 text-3xl font-bold text-slate-800">
+                Subject Specific Skills
+              </h3>
+
+              <p className="mt-2 text-slate-500">
+                Learn practical IT skills through hands-on exercises and projects.
+              </p>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+              {unit2.map((chapter) => (
+                <ChapterCard key={chapter.id} chapter={chapter} />
+              ))}
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <Footer />
+    </main>
   );
 }
