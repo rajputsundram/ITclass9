@@ -71,13 +71,14 @@ export default function ChapterCard({ chapter }: ChapterCardProps) {
 
         {/* Buttons */}
         <div className="mt-8 space-y-3">
-          <Link
-            href={`/notes/${chapter.id}`}
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition hover:bg-indigo-700"
-          >
-            Read Notes
-            <ArrowRight size={18} />
-          </Link>
+       <Link
+  href={chapter.pdf!}
+  target="_blank"
+  className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition hover:bg-indigo-700"
+>
+  Read Notes
+  <ArrowRight size={18} />
+</Link>
 
           {chapter.uploaded ? (
             <a

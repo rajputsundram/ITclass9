@@ -19,7 +19,7 @@ export const chapters = [
     icon: MessageCircle,
     color: "from-blue-500 to-cyan-500",
     time: "10 Hours",
-    pdf: "/pdfs/communication-skills.pdf",
+    pdf: "/pdf/Chapter-1.pdf",
     uploaded: true,
   },
   {
