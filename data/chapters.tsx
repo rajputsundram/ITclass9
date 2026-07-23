@@ -69,8 +69,8 @@ export const chapters = [
     icon: Monitor,
     color: "from-sky-500 to-blue-700",
     time: "10 Hours",
-    pdf: "",
-    uploaded: false,
+    pdf: "/pdf/Chapter-6.pdf",
+    uploaded: true,
   },
   {
     id: 7,
@@ -79,8 +79,8 @@ export const chapters = [
     icon: Keyboard,
     color: "from-pink-500 to-rose-500",
     time: "10 Hours",
-    pdf: "",
-    uploaded: false,
+     pdf: "/pdf/Chapter-7.pdf",
+    uploaded: true,
   },
   {
     id: 8,
@@ -89,8 +89,8 @@ export const chapters = [
     icon: FileText,
     color: "from-indigo-500 to-violet-500",
     time: "10 Hours",
-    pdf: "",
-    uploaded: false,
+     pdf: "/pdf/Chapter-8.pdf",
+    uploaded: true,
   },
   {
     id: 9,
@@ -99,8 +99,8 @@ export const chapters = [
     icon: Sheet,
     color: "from-teal-500 to-cyan-600",
     time: "10 Hours",
-    pdf: "",
-    uploaded: false,
+    pdf: "/pdf/Chapter-9.pdf",
+    uploaded: true,
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ export const chapters = [
     icon: Presentation,
     color: "from-yellow-500 to-orange-500",
     time: "10 Hours",
-    pdf: "",
-    uploaded: false,
+     pdf: "/pdf/Chapter-10.pdf",
+    uploaded:true,
   },
 ];
