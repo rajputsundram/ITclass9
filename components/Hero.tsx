@@ -1,3 +1,5 @@
+ import Link from "next/link"
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900">
@@ -37,9 +39,14 @@ export default function Hero() {
                 📖 Start Learning
               </button>
 
-              <button className="rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/20">
-                📚 Browse Chapters
-              </button>
+             
+
+<Link
+  href="/questions"
+  className="rounded-xl border border-white/20 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/20"
+>
+  📚 Browse Chapters
+</Link>
 
             </div>
 
