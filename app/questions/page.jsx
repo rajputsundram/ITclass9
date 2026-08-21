@@ -19,14 +19,14 @@ const chapters = [
     title: 'Self-Management Skills–I',
     description:
       'Learn about self-confidence, motivation, stress management, goal setting and self-management.',
-    pdf: '/pdf/Chapter -2 Questions.pdf',
+    pdf: '/pdf/Chapter -2 Question.pdf',
   },
   {
     id: 3,
     title: 'ICT Skills–I',
     description:
       'Learn about ICT, computers, hardware, software, internet, email and other ICT tools.',
-    pdf: '/pdfs/class-9/ict-skills-1.pdf',
+    pdf: '',
   },
   {
     id: 4,
