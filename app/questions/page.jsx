@@ -26,21 +26,21 @@ const chapters = [
     title: 'ICT Skills–I',
     description:
       'Learn about ICT, computers, hardware, software, internet, email and other ICT tools.',
-    pdf: '',
+    pdf: '/pdf/Chapter 3 Question.pdf',
   },
   {
     id: 4,
     title: 'Entrepreneurial Skills–I',
     description:
       'Learn about entrepreneurship, entrepreneurs, opportunities, risk-taking and entrepreneurial qualities.',
-    pdf: '/pdfs/class-9/entrepreneurial-skills-1.pdf',
+    pdf: '/pdf/Chapter 4 Question.pdf',
   },
   {
     id: 5,
     title: 'Green Skills–I',
     description:
       'Learn about green skills, sustainable development, environmental conservation and the 3Rs.',
-    pdf: '/pdfs/class-9/green-skills-1.pdf',
+    pdf: '/pdf/Chapter 5 Question.pdf',
   },
 ]
 
