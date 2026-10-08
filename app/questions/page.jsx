@@ -6,7 +6,80 @@ import {
   ArrowLeft,
 } from 'lucide-react'
 
-const chapters = [
+const chapters = [const chapters = [
+  {
+    id: 1,
+    title: 'Communication Skills–I',
+    description:
+      'Learn about communication, methods of communication, active listening, barriers and body language.',
+    pdf: '/pdf/Chapter -1 Questions.pdf',
+  },
+  {
+    id: 2,
+    title: 'Self-Management Skills–I',
+    description:
+      'Learn about self-confidence, motivation, stress management, goal setting and self-management.',
+    pdf: '/pdf/Chapter -2 Question.pdf',
+  },
+  {
+    id: 3,
+    title: 'ICT Skills–I',
+    description:
+      'Learn about ICT, computers, hardware, software, internet, email and other ICT tools.',
+    pdf: '/pdf/Chapter 3 Question.pdf',
+  },
+  {
+    id: 4,
+    title: 'Entrepreneurial Skills–I',
+    description:
+      'Learn about entrepreneurship, entrepreneurs, opportunities, risk-taking and entrepreneurial qualities.',
+    pdf: '/pdf/Chapter 4 Question.pdf',
+  },
+  {
+    id: 5,
+    title: 'Green Skills–I',
+    description:
+      'Learn about green skills, sustainable development, environmental conservation and the 3Rs.',
+    pdf: '/pdf/Chapter 5 Question.pdf',
+  },
+  {
+    id: 6,
+    title: 'Introduction to IT–ITeS Industry',
+    description:
+      'Learn about Information Technology, IT-enabled Services (ITeS), the IT industry, its importance, applications and career opportunities.',
+    pdf: '/pdf/Chapter-6.pdf',
+  },
+  {
+    id: 7,
+    title: 'Digital Documentation',
+    description:
+      'Learn about word processing, creating and editing documents, text formatting, tables, images and document management.',
+    pdf: '/pdf/Chapter-7.pdf',
+  },
+  {
+    id: 8,
+    title: 'Electronic Spreadsheet',
+    description:
+      'Learn about spreadsheets, cells, rows, columns, formulas, functions, formatting and working with data.',
+    pdf: '/pdf/Chapter-8.pdf',
+  },
+  {
+    id: 9,
+    title: 'Data Entry & Keyboarding Skills',
+    description:
+      'Learn about keyboarding techniques, touch typing, typing speed, accuracy, numeric keypad, data entry and proper sitting posture.',
+    pdf: '/pdf/Chapter-9.pdf',
+  },
+  {
+    id: 10,
+    title: 'Digital Presentation',
+    description:
+      'Learn how to create presentations, add and format slides, insert images and objects, and use transitions and animations.',
+    pdf: '/pdf/Chapter-10.pdf',
+  },
+];
+
+
   {
     id: 1,
     title: 'Communication Skills–I',
