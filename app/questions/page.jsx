@@ -6,7 +6,7 @@ import {
   ArrowLeft,
 } from 'lucide-react'
 
-const chapters = [const chapters = [
+const chapters  = [
   {
     id: 1,
     title: 'Communication Skills–I',
